@@ -7,9 +7,16 @@ import DivCheckout from "./DivCheckout";
 import SelectCheckout from "./SelectCheckout"
 import { BtnPlaceOrder, PaymentContainer, SectionTitle } from "./styles";
 import RadioButtonList from "../../Components/RadioButtonList";
+import useTitle from "../../hooks/useTitle";
+import { useEffect } from "react";
 
 
 const Checkout = () => {
+    const setTitle = useTitle()
+    
+    useEffect(() => {
+        setTitle('Checkout');
+    }, [setTitle]);
     
     return (
         <>
@@ -82,7 +89,7 @@ const Checkout = () => {
                         </form>
                         <div className="pt-3">
                             <SectionTitle>Your order</SectionTitle>
-                            <div className="row pt-5 ms-1">
+                            <div className="row pt-5 ms-1 me-1">
                                 <table className="table border p-th-td">
                                     <thead>
                                         <tr>

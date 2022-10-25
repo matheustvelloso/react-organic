@@ -57,7 +57,7 @@ export const ShopCardInfo = [
     {
         id: 8,
         image: shop8,
-        product: "Brasil",
+        product: "Basil",
         price: 1.55,
     },
     {
@@ -69,7 +69,7 @@ export const ShopCardInfo = [
     {
         id: 10,
         image: shop10,
-        product: "Tomanto",
+        product: "Tomato",
         price: 2.32,
     },
     {

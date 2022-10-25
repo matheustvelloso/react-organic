@@ -11,8 +11,16 @@ import BannerFooter from '../../Components/BannerFooter';
 import BlogCard from './BlogCard';
 import Section from '../../Components/Section';
 import { blogCards, categories, productCards } from './data';
+import useTitle from '../../hooks/useTitle'
+import { useEffect } from 'react';
+
 
 const Home = () => {
+    const setTitle = useTitle()
+
+    useEffect(() => {
+        setTitle();
+      }, [setTitle]);
     return (
         <>
             <Header className="pt-3 pb-5"/>

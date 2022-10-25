@@ -17,6 +17,8 @@ import ProductInfo from "./ProductInfo"
 import ProductDescription from "./ProductDescription"
 import ProductDetails from "./ProductDetails"
 import { useCallback, useState } from "react";
+import useTitle from "../../../hooks/useTitle";
+import { useEffect } from "react";
 
 const ShopDetail = () => {
     const [selectedImage, setSelectedImage] = useState(shop1);
@@ -25,6 +27,12 @@ const ShopDetail = () => {
         const quantity = value < 0 ? 0 : value;
         setProductQuantity(quantity);
     }, []);
+
+    const setTitle = useTitle()
+    
+    useEffect(() => {
+        setTitle('Shop-detail');
+    }, [setTitle]);
 
     return (
         <>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const DivContact = styled.div`
+    max-width: 300px;
     color: #97ae76;
     transition: 500ms;
 
@@ -14,6 +15,7 @@ export const P = styled.p`
 
 `
 export const LinkContact = styled.a`
+    max-width: 300px;
     color: #97ae76;
     transition: 500ms;
 

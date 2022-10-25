@@ -4,7 +4,7 @@ const ProductsCard = ({image, alt, product, price}) => (
     <div className="col mb-4">
         <div className="border p-4">
             <figure>
-                <Link to="/produtos/produto">
+                <Link to="/shop/shop-detail">
                     <img className="img-fluid" src={image} alt={alt} />
                 </Link>
                 <figcaption className="text-start">

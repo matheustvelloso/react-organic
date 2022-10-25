@@ -6,7 +6,7 @@ const DivCheckout = ({text, link}) => (
     <DivCheckoutText>
         <BsCheck className="me-3 mt-1 fs-icon"/>
         <p>{`${text}?`}</p>
-        <Link to="/carrinho" className="text-green ms-1">{link}</Link>
+        <Link to="/cart" className="text-green ms-1">{link}</Link>
     </DivCheckoutText>
 );
 

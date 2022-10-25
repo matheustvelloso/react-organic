@@ -8,10 +8,9 @@ export const Select = styled.select`
         outline: none;
     }
 `;
-export const DivShop = styled.div`
+export const CardShop = styled.div`
     background-color: #d2ffea;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 `;
 
 export const Title = styled.h2`

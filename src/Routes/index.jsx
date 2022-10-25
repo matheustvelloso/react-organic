@@ -11,12 +11,12 @@ const Routes = () => (
     <BrowserRouter>
         <Router>
             <Route path="/" element={<Home />} />
-            <Route path="/quem-somos" element={<About />} />
-            <Route path="/produtos" element={<Shop/>} />
-            <Route path="/produtos/produto" element={<ShopDetail/>} />
-            <Route path="/contato" element={<Contact/>} />
-            <Route path="/carrinho" element={<Cart/>} />
-            <Route path="/pagamento" element={<Checkout/>} />
+            <Route path="/about" element={<About />} />
+            <Route path="/shop" element={<Shop/>} />
+            <Route path="/shop/shop-detail" element={<ShopDetail/>} />
+            <Route path="/contact" element={<Contact/>} />
+            <Route path="/cart" element={<Cart/>} />
+            <Route path="/checkout" element={<Checkout/>} />
         </Router>
     </BrowserRouter>
 );

@@ -17,9 +17,9 @@ const Header = ({className}) => {
                 <Container>
                     <Nav className="d-flex flex-column justify-content-between align-items-center col">
                         <Link className="pb-4" to="/">HOME</Link>
-                        <Link className="pb-4" to="/produtos">SHOP</Link>
-                        <Link className="pb-4" to="/quem-somos">ABOUT</Link>
-                        <Link className="pb-4" to="/contato">CONTACT</Link>
+                        <Link className="pb-4" to="/shop">SHOP</Link>
+                        <Link className="pb-4" to="/about">ABOUT</Link>
+                        <Link className="pb-4" to="/contact">CONTACT</Link>
                     </Nav>
                 </Container>
             </MenuMobile>
@@ -31,11 +31,11 @@ const Header = ({className}) => {
                         </div>
                         <Nav className="d-none d-md-flex justify-content-between align-items-center col">
                             <Link className="pe-5" to="/">HOME</Link>
-                            <Link className="pe-5" to="/produtos">SHOP</Link>
-                            <Link className="pe-5" to="/quem-somos">ABOUT</Link>
-                            <Link className="pe-5" to="/contato">CONTACT</Link>
+                            <Link className="pe-5" to="/shop">SHOP</Link>
+                            <Link className="pe-5" to="/about">ABOUT</Link>
+                            <Link className="pe-5" to="/contact">CONTACT</Link>
                         </Nav>
-                        <div className="d-flex justify-content-center align-items-center col">
+                        <div className="d-flex justify-content-end align-items-center col">
                             <Select className="select" name="coin">
                                 <option value="usd">USD</option>
                                 <option value="vnd">VND</option>
@@ -43,7 +43,7 @@ const Header = ({className}) => {
                                 <option value="jpy">JPY</option>
                             </Select>
                             <AiOutlineSearch className="fs-icon ms-3"/>
-                            <Link to="/carrinho"><MdOutlineShoppingCart className="fs-icon ms-3 "/></Link> 
+                            <Link to="/cart"><MdOutlineShoppingCart className="fs-icon ms-3 "/></Link> 
                             <VscThreeBars onClick={() => setIsMenuOpened(true)} className="fs-icon ms-3 d-block d-md-none"/>
                         </div>
                     </div>
