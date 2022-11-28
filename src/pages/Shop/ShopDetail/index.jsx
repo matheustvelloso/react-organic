@@ -81,7 +81,7 @@ const ShopDetail = () => {
                             </div>
                             <div className="d-flex flex-column flex-xl-row justify-content-between align-items-center pt-3 pb-5">
                                 <div className="d-flex pb-5">
-                                    <BtnLessMore disabled={productQuantity === 0} onClick={() => handleInputChange(productQuantity - 1)}>-</BtnLessMore>
+                                    <BtnLessMore disabled={productQuantity === 1} onClick={() => handleInputChange(productQuantity - 1)}>-</BtnLessMore>
                                     <InputLessMore type="number" onChange={(e) => handleInputChange(e.nativeEvent.target.value)} value={productQuantity}/>
                                     <BtnLessMore onClick={() => handleInputChange(productQuantity + 1)}>+</BtnLessMore>
                                 </div>
