@@ -27,7 +27,7 @@ const Header = ({className}) => {
                 <Container>
                     <div className="row mt-4 d-flex">
                         <div className="col col-xl-3">
-                            <img className="img-fluid align-self-center" src={Logo} alt="logo" />
+                            <Link to="/"><img className="img-fluid align-self-center" src={Logo} alt="logo" /></Link>
                         </div>
                         <Nav className="d-none d-md-flex justify-content-between align-items-center col">
                             <Link className="pe-5" to="/">HOME</Link>

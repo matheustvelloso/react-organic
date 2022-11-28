@@ -1,9 +1,9 @@
 import { ImageContainer } from "./styles";
 
 const ProductShopDetail = ({onClick, image, alt}) => (
-    <ImageContainer className="col-4">
-        <img onClick={onClick} className="img-fluid border" src={image} alt={alt} />
-    </ImageContainer>
+    <div className="col">
+        <ImageContainer onClick={onClick} className="img-fluid border" src={image} alt={alt} />
+    </div>
 );
 
 export default ProductShopDetail;
